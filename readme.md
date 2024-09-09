@@ -12,7 +12,7 @@ For Macos
 ```bash
 python3 -m venv .env
 ```
-For Windowns
+For Windows
 ```bash
 python3 virtualenv.exe .env
 ```
@@ -25,6 +25,8 @@ For Macos:
 ```bash
 source .env/bin/activate
 ```
+
+
 Install Dependencies
 ```bash
 pip install -r requirements.txt
@@ -58,6 +60,7 @@ In the views.py I have created a function called haversine(The haversine formula
 
 Finally, in the views.py of pages app, I created a class-based function FoodTruckView(APIView) At the start of the function we extracted latitudes and longitudes that the user provided as a parameter, and then I queried all the data from the database(items list) then I have created an array called distance and added all food trucks with respective distance from the given latitude and longitude. Then I sorted the array like the shortest distance at the top and returned the first five elements in the array as JSON data.
 
+
 # 💡 Potential Improvements
 If given more time, I would implement:
 
@@ -74,6 +77,7 @@ Deploy the API on AWS or any cloud platform for better scalability and availabil
 Frontend:
 
 Create a dedicated frontend using React and Next.js for a beautiful UI and a better user experience.
+
 
 # 🚀 Technologies Used
 Django
